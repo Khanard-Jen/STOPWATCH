@@ -1,0 +1,110 @@
+body{
+    background: linear-gradient(25deg,#146fd1,#c9c3c4ca 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: cursive;
+}
+
+.container{
+    background-color: rgb(255, 255, 255);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-size: 38px;
+    margin-bottom: 1.5rem;
+}
+
+.StopWatch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.Timer{
+    font-size: 40px;
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 1);
+    animation: pulse 1.5s infinite alternate;
+}
+
+.Timer span{
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+}
+
+@keyframes pulse {
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.05);
+    }
+}
+
+.Controls{
+    display: flex;
+    gap: 1rem;
+}
+
+button{
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: rgb(32, 84, 129);
+    color: aliceblue;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button :hover{
+    background-color: #d72a76;
+
+}
+
+.Lap-Title{
+    font-size: 1.5rem;
+
+}
+
+.Laps{
+    width: 100%;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    max-height: 200px;
+    background-color: azure;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 1);
+}
+
+li{
+    padding: 1rem;
+    border-bottom: 1px solid white;
+}
+
+li:last-child{
+    border-bottom: none;
+}
+
+li span{
+    font-weight: 700;
+    
+}
