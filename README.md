@@ -1,0 +1,1 @@
+This is a simple and intuitive stopwatch application I developed using [your tech stack, e.g., HTML, CSS, JavaScript]. It features essential functionality such as Start, Stop, Pause, Reset, and Lap timing. The project focuses on clean design, responsive layout, and accurate time tracking.
